@@ -1,0 +1,24 @@
+{
+  "name": "k-tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeonghun-seo/k-tech.git"
+  },
+  "author": "jeonghun-seo",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jeonghun-seo/k-tech/issues"
+  },
+  "homepage": "https://github.com/jeonghun-seo/k-tech#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  }
+}
