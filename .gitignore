@@ -2,3 +2,5 @@
 yolov8n.pt
 __pycache__
 log/
+node_modules
+package-lock.json
