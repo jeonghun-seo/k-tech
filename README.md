@@ -1,1 +1,1 @@
-# k-tech
+# <div align="center">2023 K-Tech 아이디어 챌린지</div>
