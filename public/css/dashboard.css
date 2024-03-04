@@ -1,0 +1,224 @@
+/* body 전체 컨테이너 속성 값*/ 
+.container {
+  display: flex;     
+  flex-direction: column;   /*아이템 요소 방향 세로(수직정렬)*/
+  align-items: center;   
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/* main All Container*/
+.mainContainer {
+  width: 90%;
+  height: 95%;
+
+  margin-left: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+.leftContent {
+  width: 85%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  margin-right: 5vh;
+  margin-left: 5vh;
+}
+
+.sectionA{
+  width: 100%;
+  height: 20%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nowDate{
+  width: 100%;
+  height: 85%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  align-items: center;
+
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 15px;
+  font-size: 45px;
+  font-weight: 500;  
+}
+
+.sectionB{
+  width: 100%;
+  height: 55%;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+
+.classroom {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+.rightContent {
+  width: 35%;
+  height: 100%;
+  margin-top: 3vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.articleA{
+  width: 100%;
+  height: 85%;
+
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.acitivity {
+  width: 100%;
+  height: 88%;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 15px;
+}
+
+#item-class {
+  width: 63px;
+  height: 63px;
+  margin-left: 20px;
+  background-color: #FFF2E9;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#item-freq {
+  width: 63px;
+  height: 63px;
+  margin-left: 40px;
+  background-color: #EDE8FF;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#item-now {
+  width: 63px;
+  height: 63px;
+  margin-left: 40px;
+  background-color: #EAF9FF;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#item-all {
+  width: 63px;
+  height: 63px;
+  margin-left: 40px;
+  background-color: #EAF9FF;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-title {
+  font-size: 11pt;
+  font-weight: 500;
+  color: #92959E;
+  margin-left: 1vh;
+}
+.item-subtitle {
+  font-size: 13pt;
+  font-weight: 500;
+  color: #000000;
+}
+.classroom-title {
+  position: absolute;
+  font-size: 15pt;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+  top: 20px;
+  left: 30px;
+}
+#rect-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+  
+}
+.rectangle {
+  width: 100px;
+  height: 72px;
+  margin: 2vh;
+  background: #F3F0FF;
+  border-radius: 7px;
+}
+.activity-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.activity-info {
+  font-size: 13pt;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-left: 1vh;
+}
+.activity-img {
+  margin-top: 5px;
+}
+.dashboard-item-divider {
+  position: absolute;
+  top: 130px;
+  width: 260px;
+  height: 2px;
+  background-color: rgba(236, 236, 238);
+}

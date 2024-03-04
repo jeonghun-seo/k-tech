@@ -11,7 +11,7 @@ def run():
     # 감지 후 인식된 객체 수 리스트의 평균을 구하고 반올림
     m = round(numpy.mean(detected_list)) 
     # 현재 시간 구하기
-    time_today = datetime.today().strftime("%Y/%m/%d %H:%M:%S")
+    time_today = datetime.today().strftime("%Y/%m/%d %H시%M분%S초")
     print(f'{time_today} 감지 결과:{m}명')
     
     #log 폴더에 txt파일로 저장
@@ -20,14 +20,14 @@ def run():
     file.close()
 
 #평일 아침 08:30분에 객체 감지 시작
-schedule.every().monday.at("08:30").do(run)
-schedule.every().tuesday.at("08:30").do(run)
-schedule.every().wednesday.at("08:30").do(run)
-schedule.every().thursday.at("08:30").do(run)
-schedule.every().friday.at("08:30").do(run)
+# schedule.every().monday.at("08:30").do(run)
+# schedule.every().tuesday.at("08:30").do(run)
+# schedule.every().wednesday.at("08:30").do(run)
+# schedule.every().thursday.at("08:30").do(run)
+# schedule.every().friday.at("08:30").do(run)
 
 #테스트용 코드 - 1분마다 run 실행
-#schedule.every(1).minute.do(run)
+schedule.every(20).seconds.do(run)
 
 #스케줄 시작
 while True:

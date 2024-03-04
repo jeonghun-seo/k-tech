@@ -56,7 +56,7 @@ def detect():
             detections=detections,
             labels=labels)
 
-        cv2.imshow('yolov8', frame) # 화면에 결과 출력
+        cv2.imshow('K-Tech', frame) # 화면에 결과 출력
     
         stop = int(time.time() - start_time) # 시작 시간으로부터 지난 시간 저장
         if stop > capture_duration or cv2.waitKey(1) == ord('q'): #캡쳐 시간이 다 되었거나 q키를 누를경우 종료

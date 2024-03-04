@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <title>바라보다 - BOM</title>
+</head>
+
+<body>
+  <div class='dashboard'>
+    <div class="dashboard-nav">
+      <header>
+        <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
+        <a href="#" class="brand-logo">
+          <img class="logo" src="img/logo.png" alt="logo">
+          <span class="logo-name">BOM</span>
+        </a>
+      </header>
+
+      <nav class="dashboard-nav-list">
+        <a href="#" class="dashboard-nav-item"><i class="fas fa-user"></i>프로필</a>
+        <a href="#" class="dashboard-nav-item active" style="color: #551FFF;"><i class="fa-solid fa-square-poll-horizontal"></i> 출석 현황</a>
+        <a href="#" class="dashboard-nav-item"><i class="fa-solid fa-chart-simple"></i> 통계</a>
+        <div class="nav-item-divider"></div>
+        <div class='dashboard-nav-dropdown'>
+          <a href="#" class="dashboard-nav-item"><i class="fas fa-cogs"></i> Settings </a>
+          <a href="#" class="dashboard-nav-item"><i class="fas fa-user"></i> Profile </a>
+          <a href="#" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
+      </nav>
+    </div>
+
+    <div class='dashboard-app'>
+      <header class='dashboard-toolbar'>
+        <h2><br>출석 현황<p class="subtitle">현재 출석중인 학생을 확인합니다.</p>
+        </h2>
+      </header>
+      <div class="mainContainer">
+
+        <div class="leftContent">
+          <div class="sectionA">
+            <div class="nowDate">
+              <div id="item-class"><i class="fa-solid fa-newspaper fa-2xs" style="color: #ff6a00;"></i></div>
+              <span class="item-title"><br>사용중인 교실<p class="item-subtitle">3반</p></span>
+              <div id="item-freq"><i class="fa-solid fa-arrow-down-up-across-line fa-2xs" style="color: #551fff;"></i></div>
+              <span class="item-title"><br>오늘 감지 횟수<p class="item-subtitle">7회</p></span>
+              <div id="item-now"><i class="fa-solid fa-user fa-2xs" style="color: #00b7fe;"></i></div>
+              <span class="item-title"><br>현재 학생 수<p class="item-subtitle"><%=studentData %>명</p></span>
+              <div id="item-all"><i class="fa-solid fa-user fa-2xs" style="color: #00b7fe;"></i></div>
+              <span class="item-title"><br>전체 학생 수<p class="item-subtitle">20명</p></span>
+            </div>
+          </div>
+
+          <div class="sectionB">
+            <div class="classroom">
+              <p class="classroom-title">교실 모니터링</p>
+              <div id="rect-area">
+                <% for(let j=0; j<studentData; j++) { %>
+                  <div class="rectangle"></div>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightContent">
+          <div class="articleA">
+            <div class="acitivity">
+              <p class="classroom-title">Activity</p>
+              <div class="activity-area">
+                <img class="activity-img" src="img/user-group-solid.svg" alt="">
+                <p class="activity-info"><%=logData %></p>
+                <div class="dashboard-item-divider"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
